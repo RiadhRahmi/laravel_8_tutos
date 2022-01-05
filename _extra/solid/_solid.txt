@@ -10,8 +10,8 @@ SOLID PRINCIPLES
 3 - Liskov Substitution Principle (LSP)
 - if you substitute any type with one of its subtypes, the behavior should not change.
 
-Interface Segregation Principle (ISP)
-“avoid making general interface contain all methods.”
+4 - Interface Segregation Principle (ISP)
+- avoid making general interface contain all methods.
 
 Dependency Inversion Principle (DIP)
 “higher level classes should not know the implementation of low level classes but depends on abstraction.”
