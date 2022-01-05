@@ -1,0 +1,15 @@
+// course SSO Oauth2
+https://www.youtube.com/watch?v=mYdyWK97jgw
+https://www.youtube.com/watch?v=3fUDeRl6Bw0
+
+// course SSO Kerberos
+https://www.youtube.com/watch?v=XPVrUhk9od4
+https://www.youtube.com/watch?v=MdkPqmbhO80
+https://www.youtube.com/results?search_query=php+kerberos+active+directory
+
+
+// course SSO server
+https://grafikart.fr/tutoriels/laravel-passport-oauth-978
+
+// course SSO client
+https://grafikart.fr/tutoriels/oauth2-php-google-1171
