@@ -8,8 +8,23 @@ https://www.youtube.com/watch?v=MdkPqmbhO80
 https://www.youtube.com/results?search_query=php+kerberos+active+directory
 
 
-// course SSO server
+// course SSO server Oauth2
 https://grafikart.fr/tutoriels/laravel-passport-oauth-978
+https://laravel.com/docs/8.x/passport
+
+// course SSO server SAML
+https://www.youtube.com/watch?v=UStYPs-vyag
+https://plugins.miniorange.com/laravel-single-sign-on-sso
+https://imbringingsyntaxback.com/implementing-a-saml-idp-with-laravel/
+https://github.com/codegreencreative/laravel-samlidp
+https://auth0.com/blog/how-saml-authentication-works/
+https://medium.com/@gayanhewa/okta-and-saml-with-php-c5f90a956f50
+https://imbringingsyntaxback.com/implementing-a-saml-idp-with-laravel/
+https://github.com/codegreencreative/laravel-samlidp
+https://socialiteproviders.com/Saml2/#installation-basic-usage
+https://github.com/taiyeoguns/laravel-saml-sp-demo
+https://www.larablocks.com/package/aacotroneo/laravel-saml2
+https://www.miniorange.com/laravel-single-sign-on-(sso)
 
 // course SSO client
 https://grafikart.fr/tutoriels/oauth2-php-google-1171
