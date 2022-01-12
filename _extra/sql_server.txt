@@ -1,0 +1,45 @@
+
+// php.ini
+
+extension=sqlsrv_74_ts_x64
+extension=pdo_sqlsrv_74_ts_x64
+
+
+// lien tuto
+https://medium.com/@marcorivm/connect-laravel-to-sql-server-25a53dba2ddc
+https://www.youtube.com/watch?v=w3L3G-TMmJA
+https://www.guru99.com/sql-server-create-user.html
+https://www.jprog.com/wiki/What-is-the-SA-password-and-what-does-it-do.ashx
+
+
+
+
+
+// tutos
+https://www.youtube.com/watch?v=C_KeaoJ6-Gc&list=PLSwH4ViBDl2RKFBT2fCWxbISop0Q_aGdP&index=1
+https://www.youtube.com/watch?v=11Rx35l8Khc
+https://www.sqlservertutorial.net/sql-server-basics/sql-server-create-database/
+https://www.youtube.com/watch?v=fM6NZLO7Sa0
+https://www.youtube.com/watch?v=LIytfaWH_10
+
+// fix bugs
+https://stackoverflow.com/questions/18060667/cannot-connect-to-server-a-network-related-or-instance-specific-error
+https://stackoverflow.com/questions/12774827/cant-connect-to-localhost-on-sql-server-express-2012-2016
+
+
+
+// create database
+CREATE DATABASE TestDb;
+
+// drop tables
+DROP TABLE IF EXISTS sales.revenues;
+
+// select rows
+SELECT TOP (1000) [visit_id]
+      ,[first_name]
+      ,[last_name]
+      ,[visited_at]
+      ,[phone]
+      ,[store_id]
+  FROM [testone].[dbo].[sales]
+
