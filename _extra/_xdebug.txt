@@ -1,0 +1,45 @@
+https://www.youtube.com/watch?v=3nCfRxuGtv4
+https://medium.com/laravelarticle/php-8-apache-can-not-start-fixed-c62b0a0e4f0a
+
+https://xdebug.org/wizard
+
+??????? dont forget to restart the serve with ========== php artisan serve
+
+launch.json
+
+{
+    "configurations": [
+    {
+        "name": "Listen for Xdebug",
+        "type": "php",
+        "request": "launch",
+        "port": 8000
+    }
+    ]
+}
+
+or 
+
+{
+    "configurations": [
+    {
+        "name": "Listen for Xdebug",
+        "type": "php",
+        "request": "launch",
+        "port": 9003
+    }
+    ]
+}
+
+
+php.ini
+
+zend_extension = xdebug
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.client_port=9003
+xdebug.remote_port=9003
+xdebug.log="D:\logs\x-debug.log"
+xdebug.log_level=7
+xdebug.idekey=VSCODE
+xdebug.client_host="127.0.0.1"
