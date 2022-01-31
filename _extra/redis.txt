@@ -1,0 +1,15 @@
+// install redis windows
+https://www.youtube.com/watch?v=_nFwPTHOMIY
+https://redis.com/blog/redis-on-windows-10/
+https://grafikart.fr/tutoriels/redis-bases-783
+
+
+// use Redis in Laravel
+https://www.honeybadger.io/blog/laravel-caching-redis/
+https://laravel.com/docs/8.x/redis
+https://aregsar.com/blog/2020/configure-laravel-cache-to-use-redis/
+
+
+Redis est un système de gestion de base de données clef-valeur hautes performances qui 
+stocke les informations en mémoire pour un accès plus rapide des données.
+Il peut être utilisé pour gérer les sessions de vos utilisateurs ou le cache de votre site par exemple.
