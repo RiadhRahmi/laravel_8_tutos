@@ -1,0 +1,4 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'memcached/memcached.c' (tried: memcached/memcached.c (Le module spécifié est introuvable.), C:/laragon/bin/php/php-7.4.9-Win32-vc15-x64/ext\php_memcached/memcached.c.dll (Le module spécifié est introuvable.)) in Unknown on line 0
+
+Parse error: syntax error, unexpected ''$c' (T_ENCAPSED_AND_WHITESPACE), expecting end of file in Command line code on line 1

@@ -1,0 +1,15 @@
+
+// tutos
+https://orangeable.com/server/memcached-install
+https://pecl.php.net/package/memcache
+https://pecl.php.net/package/memcache/4.0.5.2/windows
+http://www.phpzone.in/how-to-resolve-class-memcached-not-found-in-laravel/
+
+https://www.itsolutionstuff.com/post/how-to-install-and-use-memcached-in-laravelexample.html
+
+// fix errors
+https://sourceforge.net/p/laragon/tickets/6/
+
+
+Les données mises en cache sont généralement stockées
+ dans un magasin de données très rapide tel que Memcached ou Redis .
