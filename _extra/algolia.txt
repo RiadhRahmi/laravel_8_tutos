@@ -1,0 +1,10 @@
+// tuto algolia
+https://www.itsolutionstuff.com/post/laravel-scout-algolia-search-exampleexample.html
+https://www.youtube.com/watch?v=j2XjeqjaTqA&t=13s
+https://www.algolia.com/doc/
+https://www.youtube.com/watch?v=NJy4ONlzg2A&t=10s
+
+
+
+
+// algolia search by indexation not by like %, gives you statistics and access dashboard

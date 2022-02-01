@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ItemSearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,8 @@ Route::get('/', function () {
 
 Route::get('/test', [HomeController::class, 'index']);
 Route::get('/test2', [HomeController::class, 'test2']);
+
+
+
+Route::get('items-lists', [ItemSearchController::class, 'index'])->name('items-lists');
+Route::post('create-item', [ItemSearchController::class, 'create'])->name('create-item');
