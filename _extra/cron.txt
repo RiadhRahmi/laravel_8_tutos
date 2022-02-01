@@ -1,0 +1,2 @@
+https://hackthestuff.com/article/how-to-set-cron-job-in-laravel-8-using-scheduler
+
