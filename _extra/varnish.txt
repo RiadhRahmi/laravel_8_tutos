@@ -1,0 +1,46 @@
+// install varnish on windows
+https://meetanshi.com/blog/install-varnish-cache-on-windows/
+
+
+// varnish tuto
+https://medium.com/@pkhach/optimize-website-speed-with-varnish-cache-c07424e38c8
+
+
+// varnish laravel
+https://freek.dev/663-using-varnish-on-a-laravel-forge-provisioned-server
+https://github.com/spatie/laravel-varnish
+https://symfony.com/doc/current/http_cache/varnish.html
+
+
+
+// varnish drupal
+https://www.choosit.com/blog/mise-en-place-de-varnish-avec-drupal-8/
+https://akabia.fr/installation-de-varnish-sur-un-site-drupal
+https://makina-corpus.com/drupal/varnish-et-drupal-gerer-un-cache-anonyme-etendu
+https://www.varnish-software.com/developers/tutorials/configuring-varnish-drupal/
+
+
+// varnish wordpress
+https://www.varnish-software.com/developers/tutorials/configuring-varnish-wordpress/
+
+
+
+
+// varnish definition
+
+Varnish serves data from virtual memory, a response is returned without needing 
+to access the application and database servers. Each Varnish server can handle thousands of 
+requests per second, much faster than a ‘usual’ website’s framework alone.
+
+
+each HTTP request from the browser will first go to the Varnish server. 
+If the current request was not found in the cache, Varnish will request your application server, cache 
+the response and send the response back to the browser.
+
+Another advantage of this approach is that Varnish will improve the availability of your website.
+
+- invalidate specific resources
+- purge requests
+
+- Varnish can serve only anonymous users and will remove all session-specific cookies from HTTP headers
+- Requests from registered users won’t be cached and will go directly to your application server.
