@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TestQueueEmails;
 use App\Http\Controllers\ItemSearchController;
 
 /*
@@ -27,3 +28,5 @@ Route::get('/test2', [HomeController::class, 'test2']);
 
 Route::get('items-lists', [ItemSearchController::class, 'index'])->name('items-lists');
 Route::post('create-item', [ItemSearchController::class, 'create'])->name('create-item');
+
+Route::get('sending-queue-emails', [TestQueueEmails::class, 'sendTestEmails']);

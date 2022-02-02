@@ -1,0 +1,7 @@
+// queue tuto
+https://www.section.io/engineering-education/implementing-laravel-queues/
+https://grafikart.fr/tutoriels/jobs-queue-889
+
+
+// horizon package
+https://www.youtube.com/watch?v=uT2bVecaVHw
