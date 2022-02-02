@@ -28,6 +28,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
         $schedule->command('demo:cron')->everyMinute();
+        $schedule->command('queue:work --max-jobs=500 --stop-when-empty')->withoutOverlapping();
     }
 
     /**
