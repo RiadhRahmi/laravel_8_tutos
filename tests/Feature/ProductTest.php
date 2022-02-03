@@ -74,4 +74,22 @@ class ProductTest extends TestCase
             'category_id' => $category->id,
         ]);
     }
+
+
+    /**
+     *  assert Exception Example
+     */
+    public function test_it_prevent_changing_the_product_category()
+    {
+        $product = Product::factory()->create();
+        $category = Category::factory()->create();
+        $category2 = Category::factory()->create();
+
+        $product->setCategory($category);
+
+        $this->expectException(\Exception::class);
+        $this->expectExceptionMessage('You can not change the product category');
+
+        $product->setCategory($category2);
+    }
 }
