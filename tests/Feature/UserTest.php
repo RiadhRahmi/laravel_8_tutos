@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use App\Models\User;
+use App\Models\Product;
 use Database\Seeders\ProductSeeder;
 use Illuminate\Foundation\Testing\WithFaker;
 use Symfony\Component\HttpFoundation\Response;
@@ -90,10 +91,10 @@ class UserTest extends TestCase
 
         $this->assertDeleted($user);
 
-        $user = User::factory()->create();
+        $product = Product::find(1);
 
-        $user->delete();
+        $product->delete();
 
-        $this->assertModelMissing($user);
+        $this->assertModelMissing($product);
     }
 }
