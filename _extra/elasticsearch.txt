@@ -1,0 +1,10 @@
+
+// tuto
+https://grafikart.fr/tutoriels/elastic-search-626
+https://madewithlove.com/blog/software-engineering/how-to-integrate-elasticsearch-in-your-laravel-app-2021/
+https://github.com/tonysm/laravel-elasticsearch-2019
+
+
+
+ElasticSearch est un moteur de recherche qui permet 
+notamment des recherches poussées au sein de texte.
