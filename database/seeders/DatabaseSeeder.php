@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Article;
 use Illuminate\Database\Seeder;
+use Database\Seeders\ProductSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,7 +15,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Article::factory()->times(50)->create();
+        $this->call(ProductSeeder::class);
+
+        // Article::factory()->times(50)->create();
 
         // \App\Models\User::factory(10)->create();
     }

@@ -5,6 +5,7 @@ use App\Articles\ArticlesRepository;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TestQueueEmails;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ItemSearchController;
 
 /*
@@ -41,3 +42,8 @@ Route::get('/dashboard', function (ArticlesRepository $repository) {
         'articles' => $articles,
     ]);
 })->name('dashboard');
+
+
+
+Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{product}', [ProductController::class, 'show']);
