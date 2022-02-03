@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use Tests\TestCase;
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ProductTest extends TestCase
@@ -26,8 +27,6 @@ class ProductTest extends TestCase
 
     /**
      * test page products
-     *
-     * @return void
      */
     public function test_user_can_list_products()
     {
@@ -39,8 +38,6 @@ class ProductTest extends TestCase
 
     /**
      * test page detail product
-     *
-     * @return void
      */
     public function test_user_can_see_product_details()
     {
@@ -49,5 +46,32 @@ class ProductTest extends TestCase
         $response->assertStatus(200)
             ->assertSee('Car')
             ->assertSee('100');
+    }
+
+
+
+    /**
+     * test relationships in laravel
+     */
+    public function test_a_product_can_belongs_to_a_category()
+    {
+        // arrange
+        $product = Product::factory()->create();
+        $category = Category::factory()->create();
+
+        // assert
+        $this->assertDatabaseMissing('products', [
+            'id' => $product->id,
+            'category_id' => $category->id,
+        ]);
+
+        // act
+        $product->setCategory($category);
+
+        // assert
+        $this->assertDatabaseHas('products', [
+            'id' => $product->id,
+            'category_id' => $category->id,
+        ]);
     }
 }
