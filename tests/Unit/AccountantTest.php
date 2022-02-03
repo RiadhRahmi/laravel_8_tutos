@@ -16,7 +16,7 @@ class AccountantTest extends TestCase
     function test_it_can_find_profit()
     {
         $profit = AccountantHelper::findProfit(100);
-       
+
         $this->assertEquals(10, $profit);
 
         $this->assertLessThan(100, $profit);

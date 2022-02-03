@@ -1,0 +1,7 @@
+
+https://github.com/BashirShallah/Laravel-Testing
+https://www.youtube.com/watch?v=HGIoFSKVyOQ&list=PL1FWK-sgJ9emnEco-F8WF35h13YRuFvuX&index=6
+
+
+https://laravel.com/docs/8.x/dusk
+https://laravel.com/docs/8.x/mocking
