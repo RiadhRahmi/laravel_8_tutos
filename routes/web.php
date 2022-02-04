@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TestQueueEmails;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SolariumController;
 use App\Http\Controllers\ItemSearchController;
 
 /*
@@ -45,6 +46,10 @@ Route::get('/elasticsearch', function (ArticlesRepository $repository) {
         'articles' => $articles,
     ]);
 })->name('elasticsearch');
+
+// solr search
+Route::get('/solr', [SolariumController::class, 'search'])->name('solr');
+Route::get('/ping', [SolariumController::class, 'ping'])->name('ping');
 
 
 // testing in laravel

@@ -1,3 +1,26 @@
 
 // how to install solr
 https://www.onlinetutorialspoint.com/solr/install-apache-solr-on-windows-10.html
+
+// solr create collection
+solr create_collection -c collectionName -p 8983
+
+// add data to solr
+https://solarium.readthedocs.io/en/stable/queries/update-query/building-an-update-query/add-command/
+https://www.sitepoint.com/using-solarium-solr-search-implementation/
+
+
+// tutos
+https://titanwolf.org/Network/Articles/Article?AID=09e1acdc-a25c-41f1-b5d8-7534c8663a39
+https://www.slideshare.net/PeterSteenbergen/laravel-and-solr
+
+
+https://petericebear.github.io/laravel-php-solarium-integration-20160725/
+
+https://teguharief.wordpress.com/2018/05/01/creation-search-engine-on-laravel-sites-using-solr/
+https://gist.github.com/MonrealRyan/279d87ed532394c0f9abd559065cf868
+
+
+// solr search 
+Search engine has become a useful tool in today’s internet world. 
+Solr enables you to easily create search engines which searches databases.
