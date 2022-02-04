@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Collection;
 
 interface ArticlesRepository
 {
-    public function search(string $query = ''): Collection;
+    public function search($query = ''): Collection;
 }

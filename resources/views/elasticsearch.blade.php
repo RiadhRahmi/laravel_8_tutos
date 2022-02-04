@@ -40,7 +40,7 @@
          <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
              <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                  <div class="p-6 bg-white border-b border-gray-200">
-                     <form action="{{ route('dashboard') }}" method="get" class="pb-4">
+                     <form action="{{ route('elasticsearch') }}" method="get" class="pb-4">
                          <div class="form-group">
                              <input
                                  type="text"
@@ -52,11 +52,12 @@
                          </div>
                      </form>
                      @if (request()->has('q'))
-                         <p class="text-sm">Using search: <strong>"{{ request('q') }}"</strong>. <a class="border-b border-indigo-800 text-indigo-800" href="{{ route('dashboard') }}">Clear filters</a></p>
+                         <p class="text-sm">Using search: <strong>"{{ request('q') }}"</strong>. <a class="border-b border-indigo-800 text-indigo-800" href="{{ route('elasticsearch') }}">Clear filters</a></p>
                      @endif
                      <div class="mt-8 space-y-8">
                          @forelse ($articles as $article)
                              <article class="space-y-1">
+                                 <h2 class="font-semibold text-2xl">#{{ $article->id }}</h2>
                                  <h2 class="font-semibold text-2xl">{{ $article->title }}</h2>
                                  <p class="m-0">{{ $article->body }}</body>
                                  <div>

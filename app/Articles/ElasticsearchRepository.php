@@ -17,29 +17,40 @@ class ElasticsearchRepository implements ArticlesRepository
         $this->elasticsearch = $elasticsearch;
     }
 
-    public function search(string $query = ''): Collection
+    public function search($query = ''): Collection
     {
         $items = $this->searchOnElasticsearch($query);
 
         return $this->buildCollection($items);
     }
 
-    private function searchOnElasticsearch(string $query = ''): array
+    private function searchOnElasticsearch($query = ''): array
     {
         $model = new Article;
 
-        $items = $this->elasticsearch->search([
-            'index' => $model->getSearchIndex(),
-            'type' => $model->getSearchType(),
-            'body' => [
-                'query' => [
-                    'multi_match' => [
-                        'fields' => ['title^5', 'body', 'tags'],
-                        'query' => $query,
+        if ($query) {
+            $items = $this->elasticsearch->search([
+                'index' => $model->getSearchIndex(),
+                'type' => $model->getSearchType(),
+                'body' => [
+                    'query' => [
+                        'multi_match' => [
+                            'fields' => ['title^5', 'body', 'tags'],
+                            'query' => $query,
+                        ],
                     ],
                 ],
-            ],
-        ]);
+            ]);
+        } else {
+            $items = $this->elasticsearch->search([
+                'index' => $model->getSearchIndex(),
+                'type' => $model->getSearchType(),
+                'body' => [
+                    'size' => 100,
+                    'from' => 0
+                ],
+            ]);
+        }
 
         return $items;
     }

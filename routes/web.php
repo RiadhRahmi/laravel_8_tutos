@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Article;
 use App\Articles\SearchRepository;
 use App\Articles\ArticlesRepository;
 use Illuminate\Support\Facades\Route;
@@ -40,7 +41,6 @@ Route::post('create-item', [ItemSearchController::class, 'create'])->name('creat
 // elasticsearch
 Route::get('/elasticsearch', function (ArticlesRepository $repository) {
     $articles = $repository->search(request('q'));
-
     return view('elasticsearch', [
         'articles' => $articles,
     ]);

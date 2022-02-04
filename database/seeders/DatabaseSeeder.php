@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use App\Models\Article;
 use Illuminate\Database\Seeder;
 use Database\Seeders\ProductSeeder;
@@ -17,8 +18,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(ProductSeeder::class);
 
-        // Article::factory()->times(50)->create();
+        Article::factory()->times(50)->create();
 
-        // \App\Models\User::factory(10)->create();
+        User::factory(10)->create();
     }
 }
