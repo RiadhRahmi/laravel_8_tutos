@@ -1,0 +1,4 @@
+
+// package developemnt
+https://medium.com/@francismacugay/build-your-own-laravel-package-in-10-minutes-using-composer-867e8ef875dd
+https://learn2torials.com/a/how-to-create-laravel-package
