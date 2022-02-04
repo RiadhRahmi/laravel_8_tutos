@@ -4,7 +4,35 @@ https://grafikart.fr/tutoriels/elastic-search-626
 https://madewithlove.com/blog/software-engineering/how-to-integrate-elasticsearch-in-your-laravel-app-2021/
 https://github.com/tonysm/laravel-elasticsearch-2019
 
+https://www.youtube.com/watch?v=RvK8RK6wNdw
 
 
 ElasticSearch est un moteur de recherche qui permet 
 notamment des recherches poussées au sein de texte.
+
+
+
+//  query
+
+GET _search
+POST riadh/tutos
+{
+   "title": "Linkedin API Data PHP",
+   "category": "PHP",
+   "tags": [
+      "Linkedin",
+      "API"
+   ],
+   "duration": 60
+}
+
+DELETE riadh/tutos/QQFew34BSPnxkaeDEFiO
+
+POST riadh/tutos/_search
+{
+        "query": {
+            "query_string": {
+                "query": "Data API"
+            }
+        }
+    }

@@ -1,0 +1,3 @@
+
+// how to install solr
+https://www.onlinetutorialspoint.com/solr/install-apache-solr-on-windows-10.html
