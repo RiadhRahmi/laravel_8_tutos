@@ -25,9 +25,11 @@ Route::get('/', function () {
     return phpinfo();
 });
 
+// test xdeug
 Route::get('/test', [HomeController::class, 'index']);
 Route::get('/test2', [HomeController::class, 'test2']);
 
+// test queue
 Route::get('sending-queue-emails', [TestQueueEmails::class, 'sendTestEmails']);
 
 
@@ -36,19 +38,21 @@ Route::get('items-lists', [ItemSearchController::class, 'index'])->name('items-l
 Route::post('create-item', [ItemSearchController::class, 'create'])->name('create-item');
 
 // elasticsearch
-// Route::get('/dashboard', function (ArticlesRepository $repository) {
-//     $articles = $repository->search(request('q'));
+Route::get('/elasticsearch', function (ArticlesRepository $repository) {
+    $articles = $repository->search(request('q'));
 
-//     return view('dashboard', [
-//         'articles' => $articles,
-//     ]);
-// })->name('dashboard');
+    return view('elasticsearch', [
+        'articles' => $articles,
+    ]);
+})->name('elasticsearch');
 
 
-
+// testing in laravel
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{product}', [ProductController::class, 'show']);
 
+
+// auth routes
 
 Route::get('/welcome', function () {
     return view('welcome', ['name' => 'hello']);
